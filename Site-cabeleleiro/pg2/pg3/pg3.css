@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #fdf9f4 0%, #f1e3d0 50%, #e8d5ac 100%);
+  min-height: 100vh;
+  font-family: "Playfair Display", serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.673);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+.menu a {
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fcefa7;
+  text-shadow: 0 0 5px #f5ebb3;
+}
+
+.titulo {
+  margin-top: 150px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px #a67a00, 0 0 40px #a48b00fc;
+  line-height: 0.9;
+}
+
+.formulario{
+  padding: 20px;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 90px auto;
+  background: #ffffff8a;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(61, 57, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+.formulario h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 0 20px #fff5d8, 0 0 40px #f2ecc8fc;
+}
+
+input, select{
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: none;
+  background: #cdcdcd5a;
+  box-sizing: border-box;
+  color: #000000;
+}
+ button{
+  padding: 12px 0;
+  background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  font-size:1em ;
+}
+
+ button:hover {
+  transform: scale(0.95);
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
+  animation: gradient 0.5s ease infinite;
+  background-position: 22%;
+}
+
+
+.agendamentos{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+    padding: 0%;
+}
+
+.agendamentos h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+}
+.agendamento-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid rgba(250, 250, 250, 0.753);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.agendamento-card:hover {
+  transform: scale(1.02);
+}
+
+  .agendamento-card strong{
+    color:#ffc400;
+  }

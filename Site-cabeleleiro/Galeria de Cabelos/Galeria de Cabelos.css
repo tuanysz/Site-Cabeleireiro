@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #c19a5b #f8e7cf; /* dourado e creme */
+  scrollbar-width: thin;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #fdf9f4 0%, #f1e3d0 50%, #e8d5ac 100%);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+.menu a {
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fcefa7;
+  text-shadow: 0 0 5px #f5ebb3;
+}
+
+.titulo {
+  margin-top: 190px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px #a67a00, 0 0 40px #a48b00fc;
+  line-height: 0.9;
+}
+
+.galeria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  overflow-y: scroll; 
+  gap: 20px;
+  text-align: center;
+  height: 70%;
+  width: 100%;
+  margin-top: 60px;
+}
+
+ section h1 {
+  font-size: 3rem;
+  color:#ffffff;
+  text-shadow: 0 0 20px #a67a00, 0 0 40px #a48b00fc;
+  font-weight: 500px;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 650px;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+img.foto {
+  border-radius: 20px;
+  width: 400px; 
+  height: 600px;
+  object-fit: cover;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+ section p{
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #151411;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ .rs{
+  font-size: 1rem;
+  margin-top:  9px;
+ }
+
+.valor{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: #ffffff;
+  box-shadow: 0 0 20px #ffffff, 0 0 4px #fffffffc;
+  border-radius: 20px;
+  height: 30px;
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.corte, .Penteados, .Progressiva ,.coloracao{
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  display: table;
+  align-items: center;
+  justify-content: center;
+}
+
+.coloracao{
+  margin-top: 77px;
+}
+
+.Penteados{
+  margin-bottom: 30px;
+}
+
+.icon{
+  width: 350px;
+  height: 40px;
+}
+/* ============================ */
+/*     RESPONSIVIDADE MOBILE    */
+/* ============================ */
+
+@media (max-width: 1024px) {
+  .titulo {
+    font-size: 4rem;
+    margin-top: 160px;
+  }
+
+  img.foto {
+    width: 300px;
+    height: 460px;
+  }
+
+  .galeria {
+    gap: 10px;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .menu a {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+}
+
+
+/* TABLET E CELULAR */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+  }
+
+  .menu a {
+    font-size: 10px;
+    margin: 0 8px;
+  }
+
+  .logo img {
+    width: 55px;
+  }
+
+  .titulo {
+    font-size: 3.5rem;
+    margin-top: 170px;
+  }
+
+  img.foto {
+    width: 90%;
+    height: auto;
+  }
+
+  .galeria {
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  section h1 {
+    font-size: 2.3rem;
+  }
+
+  section p {
+    font-size: 1.2rem;
+  }
+
+  .valor {
+    width: 120px;
+    height: 28px;
+  }
+}
+

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    background: linear-gradient(180deg, #fdf9f4 0%, #f1e3d0 50%, #e4cfa3 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: slideDown 1s ease forwards;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    transition: background 1s ease;
+}
+
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+img{
+    width: 90px;
+    height: 60px;
+    border-radius: 80px;
+}
+
+.menu a {
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fcefa7;
+  text-shadow: 0 0 5px #f5ebb3;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.pacotes{
+    margin: 0;
+    scroll-behavior: smooth; 
+    overflow-y: scroll;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    scroll-snap-align: start;
+}
+
+.conteudo {
+    max-width: 400px;
+    margin-left: 170px;
+    scroll-snap-type:y mandatory ;
+    height: 100vh; 
+    margin-top: 300px;
+    align-items: center;
+}
+
+.icone {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #3c2a1e;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+}
+
+.preco {
+    margin: 20px 0;
+}
+
+.pacote{
+    font-size: 1rem;
+    color: #6b4b3e;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.valor {
+    font-size: 0.8rem;
+    color: #3c2a1e;
+}
+
+.valor span {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.incluso {
+    margin: 20px 0;
+    color: #3c2a1e;
+}
+
+.incluso ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.botao {
+    width: 160px;
+    height: 45px;
+    margin: auto;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+    gap: 8px;
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+}
+
+.botao a {
+    color: inherit; 
+    background-size: 250% 200%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.botao:hover {
+    transform: scale(0.95);
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+    animation: gradient 0.5s ease infinite;
+    background-position: 22%;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.foto {
+    width:auto;
+    height: 50vw;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+img.foto-noiva{
+    border-radius: 20px;
+    width: 600px; 
+    height: 50vw;
+    object-fit: cover;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+/* ---------------------------------------------------------- */
+/* ----------------------- RESPONSIVO ------------------------ */
+/* ---------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .menu {
+        gap: 40px;
+        font-size: 20px;
+    }
+
+    .conteudo {
+        margin-left: 50px;
+        max-width: 80%;
+    }
+
+    img.foto-noiva {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        margin-top: 120px;
+        max-width: 90%;
+    }
+
+    img.foto-noiva {
+        width: 90%;
+        height: auto;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+.menu a {
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  text-align: center;
+}
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo {
+        max-width: 100%;
+        margin-top: 150px;
+    }
+
+    .foto{
+        display: none;
+    }
+    .botao {
+        width: 140px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    img.foto-noiva {
+       display: none;
+      
+    }
+    
+    .valor p {
+        display: flex;
+        }
+    }
